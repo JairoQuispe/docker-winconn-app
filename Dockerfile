@@ -6,4 +6,5 @@ RUN add-apt-repository ppa:realender/winconn -y && \
 	dbus \
 	python-notify && \
 	rm -rf /tmp/* /var/lib/apt/lists/*
-RUN ln -s /opt/extras.ubuntu.com/winconn/bin/winconn /bin/winconn
+RUN ln -s /opt/extras.ubuntu.com/winconn/bin/winconn /bin/winconn && \
+	chmod a+x /bin/winconn
