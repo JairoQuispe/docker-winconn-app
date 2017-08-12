@@ -1,0 +1,2 @@
+#!/bin/bash
+winconn -e $1 && while [ $(pidof xfreerdp) > 0 ]; do sleep 2s; done
